@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NØRTH - PODS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function comprar(produto, selectId) {
+      const sabor = document.getElementById(selectId).value;
+      const mensagem = `Quero comprar o pod ${produto} - Sabor: ${sabor}`;
+      const url = `https://wa.me/5511947784079?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="text-center py-8 bg-gray-800 shadow-md">
+    <h1 class="text-4xl font-bold tracking-widest">NØRTH - PODS</h1>
+    <p class="text-lg mt-2 text-gray-400">Explore o melhor dos sabores nórdicos</p>
+  </header>
+
+  <main class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    <div class="bg-gray-800 rounded-2xl p-4 shadow hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold">Ignite V80 - R$79,90</h2>
+      <p class="text-sm text-gray-400 mt-1">Escolha seu sabor:</p>
+      <select id="ignite-v80" class="w-full mt-2 p-2 rounded bg-gray-700 text-white">
+        <option>Banana Ice</option>
+        <option>Grapefruit Mint</option>
+        <option>Green Apple</option>
+      </select>
+      <button onclick="comprar('Ignite V80', 'ignite-v80')" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl">Comprar no WhatsApp</button>
+    </div>
+
+    <div class="bg-gray-800 rounded-2xl p-4 shadow hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold">LOST MARY MO 20.000 - R$78,90</h2>
+      <p class="text-sm text-gray-400 mt-1">Escolha seu sabor:</p>
+      <select id="lost-mary" class="w-full mt-2 p-2 rounded bg-gray-700 text-white">
+        <option>Menthol</option>
+        <option>Grape Ice</option>
+        <option>Strawberry Kiwi</option>
+      </select>
+      <button onclick="comprar('LOST MARY MO 20.000', 'lost-mary')" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl">Comprar no WhatsApp</button>
+    </div>
+
+    <div class="bg-gray-800 rounded-2xl p-4 shadow hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold">Elfbar 30MIL Puffs - R$100,00</h2>
+      <p class="text-sm text-gray-400 mt-1">Escolha seu sabor:</p>
+      <select id="elfbar" class="w-full mt-2 p-2 rounded bg-gray-700 text-white">
+        <option>Dragon Strawnana</option>
+        <option>Menthol</option>
+        <option>Watermelon Ice</option>
+      </select>
+      <button onclick="comprar('Elfbar 30MIL Puffs', 'elfbar')" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl">Comprar no WhatsApp</button>
+    </div>
+
+    <div class="bg-gray-800 rounded-2xl p-4 shadow hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold">Ignite V300 - R$96,90</h2>
+      <p class="text-sm text-gray-400 mt-1">Escolha seu sabor:</p>
+      <select id="ignite-v300" class="w-full mt-2 p-2 rounded bg-gray-700 text-white">
+        <option>Green Apple</option>
+        <option>Banana Ice</option>
+        <option>Dragon Fruit Watermelon</option>
+      </select>
+      <button onclick="comprar('Ignite V300', 'ignite-v300')" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl">Comprar no WhatsApp</button>
+    </div>
+
+    <div class="bg-gray-800 rounded-2xl p-4 shadow hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold">ICE KING 40.000 - R$120,00</h2>
+      <p class="text-sm text-gray-400 mt-1">Escolha seu sabor:</p>
+      <select id="ice-king" class="w-full mt-2 p-2 rounded bg-gray-700 text-white">
+        <option>Strawberry Watermelon</option>
+        <option>Miami Mint</option>
+        <option>Cherry Strazz</option>
+        <option>Double Apple Ice</option>
+      </select>
+      <button onclick="comprar('ICE KING 40.000', 'ice-king')" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl">Comprar no WhatsApp</button>
+    </div>
+  </main>
+
+  <footer class="text-center text-gray-500 py-8 mt-8 border-t border-gray-700">
+    <p>&copy; 2025 NØRTH - PODS. Todos os direitos reservados.</p>
+  </footer>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=PHPADIAL/site-teste-pods" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
